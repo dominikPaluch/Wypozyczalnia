@@ -9,7 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { LeftMenuComponent } from './left-menu/left-menu.component';
 import { ContentComponent } from './content/content.component';
 import { FooterComponent } from './footer/footer.component';
-import {APPCarouselComponent} from './carousel.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,7 @@ import {APPCarouselComponent} from './carousel.component';
     LeftMenuComponent,
     ContentComponent,
     FooterComponent,
-    APPCarouselComponent
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
