@@ -7,14 +7,32 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-a, a:hover{
+a, a:hover, a:visited, a:active, a:focus {
   text-decoration: none;
+}
+
+ul, ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+ul, li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-collapse {
+  padding: 0;
+}
+
+.row {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
 }
