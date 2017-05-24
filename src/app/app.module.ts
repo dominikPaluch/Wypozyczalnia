@@ -4,29 +4,45 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
+// Imports for loading & configuring the in-memory web api
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
+
+import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { LeftMenuComponent } from './left-menu/left-menu.component';
-import { ContentComponent } from './content/content.component';
-import { FooterComponent } from './footer/footer.component';
-import { CarouselComponent } from './carousel/carousel.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { LeftMenuComponent } from './navigation/left-menu/left-menu.component';
+import { StartComponent } from './pages/start/start.component';
+import { FooterComponent } from './navigation/footer/footer.component';
+import { CarouselComponent } from './pages/carousel/carousel.component';
+import { EquipmentsComponent } from './pages/equipments/equipments.component';
+import { EquipmentService} from './equipment.service';
+import { EquipmentDetailComponent } from './pages/equipment-detail/equipment-detail.component';
+import { ContentComponent } from './navigation/content/content.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LeftMenuComponent,
-    ContentComponent,
+    StartComponent,
     FooterComponent,
-    CarouselComponent
+    CarouselComponent,
+    EquipmentsComponent,
+    EquipmentDetailComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     AlertModule.forRoot(),
+    AppRoutingModule,
+    InMemoryWebApiModule.forRoot(InMemoryDataService),
   ],
-  providers: [],
+  providers: [EquipmentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

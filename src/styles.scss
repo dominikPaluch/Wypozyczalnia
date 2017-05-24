@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background: #f7fafc url('img/bg2.jpg') repeat;
   margin: 0px;
   padding: 0;
   font-family: 'Aladin', sans-serif;
@@ -36,3 +36,12 @@ ul, li {
   margin-right: auto;
   margin-bottom: 0;
 }
+
+.navigation{
+  width: 100%;
+  background-color: #4180fc;
+  color: white;
+  line-height: 24px;
+}
+
+//
