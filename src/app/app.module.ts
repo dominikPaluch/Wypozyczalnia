@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 // Imports for loading & configuring the in-memory web api
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
@@ -38,7 +37,6 @@ import { ContentComponent } from './navigation/content/content.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AlertModule.forRoot(),
     AppRoutingModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
   ],
