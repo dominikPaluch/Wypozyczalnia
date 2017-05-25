@@ -1,15 +1,54 @@
-.image:hover {
-  -webkit-transform:scale(1.2);
-  transform:scale(1.2);
-}
-.image {
-  -webkit-transition: all 0.7s ease;
-  transition: all 0.7s ease;
-  margin: 5%;
-  border-radius: 5px;
-}
+.table-content {
+  text-align: center;
+  margin: auto;
+  max-width:1000px;
 
-.size{
-  width: 250px;
-  height: 250px;
+  .image {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+
+    &:hover {
+      border-radius: 50%;
+      box-shadow: 0 10px 6px -6px grey;
+    }
+  }
+
+  .center{
+    text-align: center;
+  }
+
+  .input-counter{
+    width: 30px;
+    text-align: center;
+  }
+
+  .inline-items{
+    display: inline;
+    float: left;
+    width: 100%;
+    padding:5%;
+
+    .btn{
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin: 5%;
+      padding:10px;
+      position: relative;
+
+      i{
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        top: 50%;
+        position: absolute;
+      }
+    }
+  }
+}
+//usuwa suwaki z inputów
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }

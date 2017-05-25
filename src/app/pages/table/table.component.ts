@@ -1,6 +1,8 @@
 import {Component, ViewChild} from '@angular/core';
 import {DataTable, DataTableResource} from 'angular-2-data-table';
 import {equipments} from './table-data';
+import {CartComponent} from '../cart/cart.component';
+import {Equipment} from 'app/equipment';
 
 @Component({
   selector: 'app-table',
@@ -13,6 +15,9 @@ export class TableComponent {
   equipments = [];
   equipmentsCount = 0;
   priceLimit = 300;
+  cart = [];
+  cartCount = 0;
+
 
   @ViewChild(DataTable) equipmentsTable: DataTable;
 
@@ -38,5 +43,26 @@ export class TableComponent {
     }
     ;
   }
+
+  addToCart(equipment, count): void {
+    for ( let i = 0; i < count; i++ ) {
+      this.cart.push(equipment);
+    }
+    console.log(this.cart.length);
+  }
+
+  incrementCart(): void {
+    this.cartCount++;
+  }
+
+  decrementCart(): void {
+    if (this.cartCount >= 1) {
+      this.cartCount--;
+    }
+  }
+
+  // removeFromCart(equipment): void {
+  //   this.cart.splice(equipment);
+  // }
 
 }

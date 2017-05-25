@@ -27,16 +27,14 @@
 
   .header-list{
     float: right;
-    height: inherit;
+    height: 100%;
 
     #zarezerwuj{
       border-top-left-radius: 50px;
-      //border-bottom-left-radius: 35px;
       background-color: #4195fc;
 
       &:hover{
         border-top-left-radius: 50px;
-        //border-bottom-left-radius: 35px;
         background-color: #f7fafc;
         color: #4195fc;
       }

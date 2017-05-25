@@ -9,12 +9,14 @@ import { EquipmentsComponent } from './pages/equipments/equipments.component';
 import { EquipmentDetailComponent } from './pages/equipment-detail/equipment-detail.component';
 import { StartComponent} from './pages/start/start.component';
 import { CarouselComponent} from './pages/carousel/carousel.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/equipments', pathMatch: 'full' },
   { path: 'detail/:id', component: EquipmentDetailComponent },
   { path: 'equipments', component: EquipmentsComponent },
   { path: 'start', component: CarouselComponent },
+  { path: 'cart', component: CartComponent },
 ];
 
 @NgModule({

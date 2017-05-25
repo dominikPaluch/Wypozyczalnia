@@ -23,6 +23,7 @@
     "angular-2-data-table": "^0.1.2",
     "angular-in-memory-web-api": "^0.3.2",
     "angular2-datatable": "^0.6.0",
+    "angular2-lightbox": "^1.1.2",
     "bootstrap": "^3.3.7",
     "core-js": "^2.4.1",
     "ng2-bootstrap": "^1.6.3",
