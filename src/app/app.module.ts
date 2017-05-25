@@ -23,7 +23,7 @@ import {ContentComponent} from './navigation/content/content.component';
 import { TableComponent } from './pages/table/table.component';
 
 import { DataTableModule } from 'angular-2-data-table';
-
+import { CartComponent } from './pages/cart/cart.component';
 
 
 @NgModule({
@@ -38,6 +38,8 @@ import { DataTableModule } from 'angular-2-data-table';
     EquipmentDetailComponent,
     ContentComponent,
     TableComponent,
+    CartComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -49,6 +51,7 @@ import { DataTableModule } from 'angular-2-data-table';
   ],
   providers: [
     EquipmentService,
+
     ],
   bootstrap: [AppComponent]
 })

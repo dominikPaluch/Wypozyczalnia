@@ -6,17 +6,17 @@
 // ];
 
 export var equipments = [
-  { url: 'http://lorempixel.com/100/100/sports/', name: 'Narty1', size: 185, desc: 'ac, abs, moon', price: 30.00 },
-  { url: 'http://lorempixel.com/100/100/sports/', name: 'Narty2', size: 170, price: 300.00 },
-  { url: 'http://lorempixel.com/100/100/sports/', name: 'Narty3', size: 155, price: 500.00 },
-  { url: 'http://lorempixel.com/100/100/sports/', name: 'Narty4', size: 196, price: 300.00 },
-  { url: 'http://lorempixel.com/100/100/sports/', name: 'Narty5', size: 200, price: 30.00 },
-  { url: 'http://lorempixel.com/100/100/sports/', name: 'Narty6', size: 188, price: 3000.00 },
-  { url: 'http://lorempixel.com/100/100/sports/', name: 'Narty1', size: 185, price: 3000.00 },
-  { url: 'http://lorempixel.com/100/100/sports/', name: 'Narty2', size: 170, price: 3000.00 },
-  { url: 'http://lorempixel.com/100/100/sports/', name: 'Narty3', size: 155, price: 3000.00 },
-  { url: 'http://lorempixel.com/100/100/sports/', name: 'Narty4', size: 196, price: 3000.00 },
-  { url: 'http://lorempixel.com/100/100/sports/', name: 'Narty5', size: 200, price: 3000.00 },
-  { url: 'http://lorempixel.com/100/100/sports/', name: 'Narty6', size: 188, price: 3000.00 },
+  { url: 'img/foto5.jpg', name: 'Narty1', size: 185, desc: 'ac, abs, moon', price: 30.00 },
+  { url: 'img/foto5.jpg', name: 'Narty2', size: 170, price: 300.00 },
+  { url: 'img/foto5.jpg', name: 'Narty3', size: 155, price: 500.00 },
+  { url: 'img/foto5.jpg', name: 'Narty4', size: 196, price: 300.00 },
+  { url: 'img/foto5.jpg', name: 'Narty5', size: 200, price: 30.00 },
+  { url: 'img/foto5.jpg', name: 'Narty6', size: 188, price: 3000.00 },
+  { url: 'img/foto5.jpg', name: 'Narty1', size: 185, price: 3000.00 },
+  { url: 'img/foto5.jpg', name: 'Narty2', size: 170, price: 3000.00 },
+  { url: 'img/foto5.jpg', name: 'Narty3', size: 155, price: 3000.00 },
+  { url: 'img/foto5.jpg', name: 'Narty4', size: 196, price: 3000.00 },
+  { url: 'img/foto5.jpg', name: 'Narty5', size: 200, price: 3000.00 },
+  { url: 'img/foto5.jpg', name: 'Narty6', size: 188, price: 3000.00 },
 
 ];

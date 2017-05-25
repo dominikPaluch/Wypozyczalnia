@@ -1,7 +1,8 @@
-<div style="margin: auto; max-width: 800px;">
+<div class="table-content">
   <div>
     <span>Cena [PLN]: </span>
-    <input type="number" [(ngModel)]="priceLimit" class="form-control input-sm" style="display: inline-block; width: 100px">
+    <input type="number" [(ngModel)]="priceLimit" class="form-control input-sm"
+           style="display: inline-block; width: 100px">
   </div>
   <data-table
     [items]="equipments"
@@ -10,43 +11,49 @@
 
     [pagination]="true"
     [indexColumn]="true"
-    [selectColumn]="true"
+    [selectColumn]="false"
     [multiSelect]="true"
-    [rowColors]="rowColors"
-  >
+    [rowColors]="rowColors">
     <data-table-column
       property="url"
-      header="Zdjecie"
-      width="122px">
-      <template  #dataTableCell let-item="item">
-        <img src={{item.url}} width="100px" height="100px" alt='blad ladowania' class="image"/>
-        <!--<a href="https://unsplash.it/1200/768.jpg?image=250" data-toggle="lightbox" data-title="A random title" data-footer="A custom footer text">-->
-          <!--<img src="https://unsplash.it/600.jpg?image=250" class="img-fluid">-->
-        <!--</a>-->
+      header="Zdjęcie"
+      width="110px">
+      <template #dataTableCell let-item="item">
+        <a href="#">
+          <img src={{item.url}} width="100px" height="100px" alt='blad ladowania' class="img-responsive image"/>
+        </a>
       </template>
     </data-table-column>
     <data-table-column
       property="name"
       header="Nazwa"
-      sortable="true">
+      sortable="true"
+      width=25%>
     </data-table-column>
     <data-table-column
       property="size"
       header="Rozmiar [cm]"
-      sortable="true">
+      sortable="true"
+      width=15%>
     </data-table-column>
     <data-table-column
       property="price"
       header="Cena (PLN)"
-      sortable="true">
+      sortable="true"
+      width=15%>
     </data-table-column>
     <data-table-column
       header="Actions">
       <template #dataTableHeader let-item="item">
-        <i>Actions</i>
+        <p>Dodaj do koszyka</p>
       </template>
       <template #dataTableCell let-item="item">
-        <button (click)="equipmentClicked(item)" class="btn btn-sm btn-default">Buy</button>
+        <div class="inline-items">
+          <button (click)="incrementCart()" class="btn btn-sm btn-success"><i class="glyphicon glyphicon-plus"></i></button>
+          <input class="input-counter" type="number" [(ngModel)]="item.count">
+          <button (click)="decrementCart()" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-minus"></i></button>
+        </div>
+        <button (click)="addToCart(item, cartCount)" class="btn btn-sm btn-default">Dodaj</button>
       </template>
     </data-table-column>
   </data-table>
