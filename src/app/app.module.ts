@@ -38,7 +38,6 @@ import { DataTableModule } from 'angular-2-data-table';
     EquipmentDetailComponent,
     ContentComponent,
     TableComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -46,8 +45,7 @@ import { DataTableModule } from 'angular-2-data-table';
     HttpModule,
     AppRoutingModule,
     InMemoryWebApiModule.forRoot(InMemoryDataService),
-    DataTableModule
-
+    DataTableModule,
   ],
   providers: [
     EquipmentService,
