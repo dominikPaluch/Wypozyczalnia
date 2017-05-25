@@ -1,0 +1,18 @@
+<div class="main-text">Aby móc zarezerwować sprzęt niezbędna jest rejestracja w systemie</div>
+<!--Tabela-->
+<app-table></app-table>
+<!--koniec tabeli-->
+<ul class="heroes">
+  <li *ngFor="let equipment of equipments"
+      [class.selected]="equipment === selectedEquipment"
+      (click)="onSelect(equipment)">
+    <span class="badge">{{equipment.id}}</span> {{equipment.name}}
+  </li>
+
+</ul>
+<div *ngIf="selectedEquipment">
+  <h2>
+    {{selectedEquipment.name | uppercase}} is my selectedEquipment
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>

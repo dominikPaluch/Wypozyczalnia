@@ -1,0 +1,15 @@
+.image:hover {
+  -webkit-transform:scale(1.2);
+  transform:scale(1.2);
+}
+.image {
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  margin: 5%;
+  border-radius: 5px;
+}
+
+.size{
+  width: 250px;
+  height: 250px;
+}
